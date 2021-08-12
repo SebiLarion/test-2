@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     
 
@@ -15,7 +15,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title >{{ shop.name }}</title>
+    <title class="mx-8 my-5 bg-red-500">{{ shop.name }}</title>
 
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
