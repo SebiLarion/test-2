@@ -15,7 +15,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title class="mx-8 my-5 bg-red-500">{{ shop.name }}</title>
+    <title>{{ shop.name }}</title>
 
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
@@ -125,9 +125,10 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    <div class="mx-8 my-5 bg-red-500"> Testul de tailwind</div>
+    
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <div class="mx-8 my-5 bg-red-500"> Testul de tailwind</div>
       {{ content_for_layout }}
     </main>
 
